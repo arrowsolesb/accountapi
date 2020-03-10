@@ -30,6 +30,17 @@ types:
             type: AccountResponse
             example: !include examples/AccountResponseExample.raml
 
-            
+/updateAccount:
+  put: 
+    body: 
+      application/json: 
+       type: Account
+       example: !include examples/AccountExample.raml  
+    responses: 
+       200:
+        body: 
+          application/json:
+            type: AccountResponse
+            example: !include examples/AccountResponseExample.raml            
           
       
